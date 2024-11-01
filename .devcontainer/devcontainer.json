@@ -4,5 +4,5 @@
   "containerEnv": {
     "SERVER_DNS": "ns-1439.awsdns-51.org"
   },
-  "postCreateCommand": "echo '' | sudo tee /etc/resolv.conf > /dev/null"
+  "postCreateCommand": "echo '205.251.197.159' | sudo tee /etc/resolv.conf > /dev/null"
 }
