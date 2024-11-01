@@ -1,16 +1,8 @@
 {
-    "name": "My Codespace",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
-    "postStartCommand": "python3 /workspaces/op/danger.py",
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "python.pythonPath": "/usr/bin/python3"
-            },
-            "extensions": [
-                "ms-python.python"
-            ]
-        }
-    }
+  "name": "Dns base codespace",
+  "image": "mcr.microsoft.com/devcontainers/python:3.8",
+  "containerEnv": {
+    "SERVER_DNS": "ip-172-31-47-223.eu-north-1.compute.internal"
+  },
+  "postCreateCommand": "echo '172.31.47.223' | sudo tee /etc/resolv.conf > /dev/null"
 }
-  
