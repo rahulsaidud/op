@@ -2,7 +2,7 @@
   "name": "Dns base codespace",
   "image": "mcr.microsoft.com/devcontainers/python:3.8",
   "containerEnv": {
-    "SERVER_DNS": "a.gtld-servers.net.com"
+    "SERVER_DNS": "ns-1439.awsdns-51.org"
   },
-  "postCreateCommand": "echo '199.7.83.42' | sudo tee /etc/resolv.conf > /dev/null"
+  "postCreateCommand": "echo '' | sudo tee /etc/resolv.conf > /dev/null"
 }
